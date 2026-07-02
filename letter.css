@@ -231,6 +231,7 @@ h1{
 
 /* Photo */
 
+
 .photoFrame{
 
     margin-top:45px;
@@ -283,4 +284,43 @@ h1{
 
     font-size:45px;
 
+}
+#photoBox{
+    position:relative;
+    overflow:hidden;
+}
+
+/* image */
+#secretPhoto{
+    position:relative;
+    z-index:2;
+}
+
+/* hidden message */
+#secretMessage{
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    font-size:22px;
+    color:#ff2e63;
+
+    background:#fff9e8;
+
+    opacity:0;
+    transform:scale(0.8);
+
+    transition:all 1s ease;
+
+    z-index:1;
+}
+
+#secretMessage.show{
+    opacity:1;
+    transform:scale(1);
 }

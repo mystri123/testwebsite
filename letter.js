@@ -55,3 +55,35 @@ function type() {
 }
 
 setTimeout(type, 1200);
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const photo = document.getElementById("secretPhoto");
+    const messageBox = document.getElementById("secretMessage");
+
+    let clickCount = 0;
+
+    photo.addEventListener("click", () => {
+
+        clickCount++;
+
+        // feedback animation
+        photo.style.transform = "scale(1.05)";
+        setTimeout(() => {
+            photo.style.transform = "scale(1)";
+        }, 150);
+
+        if (clickCount === 6) {
+
+            // fade photo
+            photo.style.opacity = "0";
+            photo.style.pointerEvents = "none";
+
+            // show message
+            messageBox.classList.add("show");
+            messageBox.style.opacity = "1";
+
+        }
+    });
+
+});
