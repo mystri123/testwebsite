@@ -1,0 +1,482 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:white;
+}
+
+/* ------------------------------
+   Animated Background
+------------------------------ */
+
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:linear-gradient(-45deg,#ff758c,#ff7eb3,#7f7fd5,#86a8e7);
+    background-size:400% 400%;
+    animation:bgAnimation 12s ease infinite;
+    z-index:-2;
+}
+
+@keyframes bgAnimation{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* Dark overlay */
+
+.background::after{
+
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.35);
+
+}
+
+/* ------------------------------
+   Common Screen
+------------------------------ */
+
+.screen{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+    width:90%;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ------------------------------
+   Countdown
+------------------------------ */
+
+#countdown{
+
+    font-size:4rem;
+
+    font-weight:bold;
+
+    margin:30px 0;
+
+    text-shadow:
+    0 0 20px pink,
+    0 0 40px hotpink;
+
+}
+
+h2{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+p{
+
+    font-size:1.2rem;
+
+}
+
+/* ------------------------------
+   Heart
+------------------------------ */
+
+#heartContainer{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+#heart{
+
+    font-size:9rem;
+
+    animation:heartbeat 1s infinite;
+
+    filter:drop-shadow(0 0 20px red);
+
+}
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    25%{
+
+        transform:scale(1.2);
+
+    }
+
+    50%{
+
+        transform:scale(.95);
+
+    }
+
+    75%{
+
+        transform:scale(1.3);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Used before burst */
+
+.zoom{
+
+    animation:zoomHeart 1.3s forwards;
+
+}
+
+@keyframes zoomHeart{
+
+    from{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:scale(12);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ------------------------------
+   Cake
+------------------------------ */
+
+#cakeContainer{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+}
+
+#cake{
+
+    font-size:10rem;
+
+    animation:cakeRise 1.5s ease;
+
+}
+
+@keyframes cakeRise{
+
+    from{
+
+        transform:translateY(250px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ------------------------------
+   Wish Text
+------------------------------ */
+
+#wish{
+
+    margin-top:20px;
+
+    font-size:3.5rem;
+
+    color:white;
+
+    text-shadow:
+
+    0 0 20px pink,
+
+    0 0 35px hotpink,
+
+    0 0 60px deeppink;
+
+}
+
+/* ------------------------------
+   Continue Button
+------------------------------ */
+
+#continueBtn{
+
+    margin-top:45px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:40px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    background:white;
+
+    color:#ff4081;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+#continueBtn:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 25px white;
+
+}
+
+/* ------------------------------
+   Fade Animation
+------------------------------ */
+
+.fadeOut{
+
+    animation:fadeOut .8s forwards;
+
+}
+
+.fadeIn{
+
+    animation:fadeIn 1s forwards;
+
+}
+
+@keyframes fadeOut{
+
+    to{
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ------------------------------
+   Responsive
+------------------------------ */
+
+@media(max-width:768px){
+
+    #countdown{
+
+        font-size:2rem;
+
+    }
+
+    #heart{
+
+        font-size:6rem;
+
+    }
+
+    #cake{
+
+        font-size:7rem;
+
+    }
+
+    #wish{
+
+        font-size:2rem;
+
+    }
+
+    h2{
+
+        font-size:1.5rem;
+
+    }
+
+    /* Cake Wrapper */
+
+.cakeWrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* Candles */
+
+.candles{
+    display:flex;
+    gap:60px;
+    margin-bottom:-15px;
+    z-index:5;
+}
+
+.candle{
+    width:12px;
+    height:45px;
+    background:white;
+    border-radius:5px;
+    position:relative;
+}
+
+/* Flame */
+
+.flame{
+
+    position:absolute;
+
+    width:16px;
+    height:16px;
+
+    background:gold;
+
+    border-radius:50% 50% 50% 50%;
+
+    top:-18px;
+    left:-2px;
+
+    opacity:0;
+
+    box-shadow:
+    0 0 20px orange,
+    0 0 35px yellow;
+
+}
+
+.flame.on{
+
+    opacity:1;
+
+    animation:flicker .25s infinite alternate;
+
+}
+
+@keyframes flicker{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.15);
+
+    }
+
+}
+
+/* Cake glow */
+
+.cakeGlow{
+
+    animation:cakeGlow 1.2s infinite alternate;
+
+}
+
+@keyframes cakeGlow{
+
+    from{
+
+        filter:drop-shadow(0 0 10px pink);
+
+    }
+
+    to{
+
+        filter:drop-shadow(0 0 35px gold);
+
+    }
+
+}
+
+}
