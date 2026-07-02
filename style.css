@@ -555,3 +555,70 @@ p{
     white-space:pre-wrap;
 
 }
+
+/* --------------------------
+   Side Photos
+-------------------------- */
+/* --------------------------
+   Side Photos (centered near cake)
+-------------------------- */
+
+.sidePhoto{
+    position:absolute;
+    width:180px;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+    opacity:0;
+    transition:1s ease;
+}
+
+/* LEFT photo closer to center */
+#leftPhoto{
+    left:5%;
+    top:50%;
+    transform:translate(-220px, -50%) rotate(-10deg);
+}
+
+/* RIGHT photo closer to center */
+#rightPhoto{
+    left:95%;
+    top:50%;
+    transform:translate(80px, -50%) rotate(10deg);
+}
+
+/* Show state */
+.sidePhoto.show{
+    opacity:1;
+}
+
+/* Animate into final position */
+#leftPhoto.show{
+    transform:translate(-260px, -50%) rotate(-12deg);
+}
+
+#rightPhoto.show{
+    transform:translate(60px, -50%) rotate(12deg);
+}
+
+/* Mobile fix */
+@media(max-width:768px){
+    .sidePhoto{
+        width:120px;
+        height:150px;
+    }
+
+    #leftPhoto.show{
+        left:5px;
+    }
+
+    #rightPhoto.show{
+        right:5px;
+    }
+}
+
+.sidePhoto:hover{
+    transform: scale(1.05) rotate(0deg);
+    box-shadow:0 20px 60px rgba(255,105,180,0.6);
+}

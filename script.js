@@ -26,7 +26,8 @@ const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 
-
+const leftPhoto = document.getElementById("leftPhoto");
+const rightPhoto = document.getElementById("rightPhoto");
 
 // =====================================
 // Update Countdown
@@ -184,6 +185,19 @@ setTimeout(() => {
 }, 2500);
 
     },5000);
+
+    // Show photos after cake appears
+setTimeout(() => {
+    leftPhoto.classList.remove("hidden");
+    rightPhoto.classList.remove("hidden");
+
+    // trigger animation
+    setTimeout(() => {
+        leftPhoto.classList.add("show");
+        rightPhoto.classList.add("show");
+    }, 200);
+
+}, 1000);
 
 }
 
