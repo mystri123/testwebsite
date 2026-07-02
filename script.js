@@ -233,7 +233,7 @@ continueBtn.onclick = ()=>{
 
     // Replace this with your memory website
 
-    window.location.href="memories.html";
+    window.location.href="letter.html";
 
 };
 
