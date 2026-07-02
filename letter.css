@@ -66,11 +66,11 @@ body::before{
 
     width:80%;
 
-    max-width:750px;
+    /* max-width:750px;
 
+    
+    padding:50px; */
     background:#fffdf8;
-
-    padding:50px;
 
     border-radius:15px;
 
@@ -81,6 +81,71 @@ body::before{
     opacity:0;
 
     animation:slideUp 1.2s forwards;
+
+}
+
+.book{
+
+    width:900px;
+    height:600px;
+
+    display:flex;
+
+    background:#c8a97e;
+
+    border-radius:10px;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.45);
+
+    overflow:hidden;
+
+    animation:zoomBook 1.5s ease;
+
+}
+
+.page{
+
+    width:50%;
+
+    background:#fff9e8;
+
+    padding:45px;
+
+    position:relative;
+
+}
+
+.leftPage{
+
+    border-right:2px solid rgba(0,0,0,.15);
+
+}
+
+.rightPage{
+
+    overflow-y:auto;
+
+}
+
+
+@keyframes zoomBook{
+
+    from{
+
+        transform:scale(.6);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
 
 }
 

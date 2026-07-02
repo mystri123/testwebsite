@@ -238,26 +238,26 @@ continueBtn.onclick = ()=>{
 };
 
 
-function typeLetter(){
+// function typeLetter(){
 
-    let i = 0;
+//     let i = 0;
 
-    letterText.innerHTML = "";
+//     letterText.innerHTML = "";
 
-    function type(){
+//     function type(){
 
-        if(i < message.length){
+//         if(i < message.length){
 
-            letterText.innerHTML += message.charAt(i);
+//             letterText.innerHTML += message.charAt(i);
 
-            i++;
+//             i++;
 
-            setTimeout(type,35);
+//             setTimeout(type,35);
 
-        }
+//         }
 
-    }
+//     }
 
-    type();
+//     type();
 
-}
+// }

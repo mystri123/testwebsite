@@ -38,19 +38,20 @@ Samarth ❤️`;
 const letter = document.getElementById("letterText");
 
 let index = 0;
+const speed = 45;
 
-function type(){
+function type() {
 
-    if(index < message.length){
+    if (index < message.length) {
 
         letter.innerHTML += message.charAt(index);
 
         index++;
 
-        setTimeout(type,35);
+        setTimeout(type, speed);
 
     }
 
 }
 
-setTimeout(type,1200);
+setTimeout(type, 1200);
