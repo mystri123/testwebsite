@@ -2,7 +2,7 @@
 // CHANGE THIS DATE
 // =====================================
 
-const birthdayDate = new Date("June 28, 2026 22:00:01").getTime();
+const birthdayDate = new Date("July 4, 2026 00:00:00").getTime();
 
 
 // =====================================
@@ -237,27 +237,3 @@ continueBtn.onclick = ()=>{
 
 };
 
-
-// function typeLetter(){
-
-//     let i = 0;
-
-//     letterText.innerHTML = "";
-
-//     function type(){
-
-//         if(i < message.length){
-
-//             letterText.innerHTML += message.charAt(i);
-
-//             i++;
-
-//             setTimeout(type,35);
-
-//         }
-
-//     }
-
-//     type();
-
-// }
