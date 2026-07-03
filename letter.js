@@ -1,39 +1,42 @@
-const message = `Dear Love ❤️,
+const message = `Dear baby ❤️,
 
-Happy Birthday!
+Happy Birthday ❤️
 
-I wish I could be there with you today.
+I wish I could be there beside you today.
 
-Since I couldn't...
+Every little animation you saw,
+every line of code,
+every second I spent building this...
+was for you.
 
-I decided to build something for you.
+Tumne mere liye jitna kiya h shayad mai utna kabhi nhi kar paunga.
 
-Every animation,
-every color,
-every line of code...
+I know this is not much, but I hope it brings a smile to your face.
 
-was written while thinking about you.
+Thank you mere liye itna sab krne ke liye. From showing me how to
+add someone to cc .. se le kr mere liye itne sare gifts dene tak.
+Sab ke liye mai hamesha aapka shukriya ada krta rahunga.
 
-Distance may separate us,
-but nothing can separate our hearts.
+Parso se tumhare life ka naya chapter shuru hone wala h,
+i hope ki tumko usme maza aye.... us chapter ko tum enjoy kro.
+I daily pray ki tumahre sare prblems solve ho jaye, aur tum hamesha khush raho.
+I hope aisa jaldi ho jaye.
+I hope jaldi tumhne kitna suffer kiya h usse zyada khushi tumko mile return me.
+Kyuki future IAS ko khush rakhna imp h, desh ka sawal h.
 
-Thank you for always making me smile.
+Me Banglore to nhi aa paya wish krne but I hope ye letter tumko achha lage.
 
-Thank you for always believing in me.
+Aj tumahra din h, achhe se enjoy kro. Kuch tension mat lo kisika (pg ka bilkul nhi)
 
-Thank you for coming into my life.
-
-I hope today brings you
-all the happiness
-that you bring into mine.
-
-I love you more than words can ever express.
+Know that I really care for you,
+more than words can ever express.
+I am always there for you.
 
 Happy Birthday once again ❤️
 
-Forever Yours,
+P.S. Something is hidden on the page, try to find it.
 
-Samarth ❤️`;
+`;
 
 const letter = document.getElementById("letterText");
 

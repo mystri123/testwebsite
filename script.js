@@ -2,7 +2,7 @@
 // CHANGE THIS DATE
 // =====================================
 
-const birthdayDate = new Date("July 4, 2026 00:00:00").getTime();
+const birthdayDate = new Date("July 4, 2026 00:1000").getTime();
 
 
 // =====================================
@@ -32,22 +32,34 @@ const rightPhoto = document.getElementById("rightPhoto");
 // =====================================
 // Update Countdown
 // =====================================
-const message = `Dear Love ❤️,
+const message = `Dear baby ❤️,
 
-Happy Birthday!
+Happy Birthday baby❤️
 
 I wish I could be there beside you today.
 
 Every little animation you saw,
 every line of code,
 every second I spent building this...
+was for you (obviosuly).
 
-was for you.
+Tumne mere liye jitna kiya h shayad mai utna kabhi nhi kar paunga.
 
-Distance may separate us today,
-but never our hearts.
+I know this is not much, but I hope it brings a smile to your face.
+Recently tumne bahut kuch face kiya h, i hope bday ke din tum uska badla
+Thank you mere liye itna sab krne ke liye. From showing me how to
+add someone to cc .. to mere liye itne sare gifts dene tak.
+Sab ke liye mai hamesha aapka shukriya ada krta rahunga.
 
-Thank you for making my life so beautiful.
+Parso se tumhare life ka naya chapter shuru hone wala h,
+i hope ki tumko usme maza aye.... us chapter ko tum enjoy kro.
+I daily pray ki tumahre sare prblems solve ho jaye, aur tum hamesha khush raho.
+I hope aisa jaldi ho jaye.
+I hope jaldi tumhne kitna suffer kiya h usse zyada khushi tumko mile return me.
+Kyuki future IAS ko khush rakhna imp h, desh ka sawal h.
+
+
+
 
 I can't wait for the day
 when I celebrate your birthday beside you.
