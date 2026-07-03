@@ -94,8 +94,8 @@ function updateCountdown(){
 
     const now = new Date().getTime();
 
-    const distance = -1;
-    // const distance = birthdayDate - now;
+    // const distance = -1;
+    const distance = birthdayDate - now;
 
     // Birthday reached
 
