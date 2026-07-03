@@ -2,7 +2,7 @@
 // CHANGE THIS DATE
 // =====================================
 
-const birthdayDate = new Date("July 4, 2026 00:10:00").getTime();
+const birthdayDate = new Date("July 4, 2026 00:20:00").getTime();
 
 
 // =====================================
