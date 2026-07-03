@@ -35,7 +35,7 @@ I am always there for you.
 Happy Birthday once again ❤️
 
 P.S. Something is hidden on the page, try to find it.
-
+(Dont use developer tools to find it)
 `;
 
 const letter = document.getElementById("letterText");
